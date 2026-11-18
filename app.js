@@ -1,5 +1,5 @@
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-const KEY="finalExamClass28";
+const KEY="finalExamClass"+(document.body.dataset.chapter||"28");
 let saved=JSON.parse(localStorage.getItem(KEY)||"{}");
 function norm(s){return (s||"").toLowerCase().trim().replace(/[’‘]/g,"'").replace(/[.,!?;:“”"]/g,"").replace(/\s+/g," ")}
 function save(){localStorage.setItem(KEY,JSON.stringify(saved));updateProgress();updateFinalScore();}
