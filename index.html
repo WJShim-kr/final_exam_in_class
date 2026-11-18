@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>수능특강 28강 수업용 웹 워크북</title>
+<link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+<div class="shell">
+  <header class="hero">
+    <div class="eyebrow">FINAL EXAM · IN CLASS PILOT</div>
+    <h1>수능특강 28강 웹 워크북</h1>
+    <p>원문은 교재로 읽고, 웹에서는 <b>핵심 흐름 → 어법 → 직접 입력 → 변형문제</b>를 연습합니다.</p>
+    <div class="progress-wrap">
+      <div class="progress-label"><span>오늘 진행률</span><b id="progressText">0%</b></div>
+      <div class="progress"><div id="progressBar"></div></div>
+    </div>
+  </header>
+
+  <nav class="topnav" aria-label="수업 단원">
+    <button data-target="p1" class="nav-btn active">28-1 주제</button>
+    <button data-target="p2" class="nav-btn">28-2 어법</button>
+    <button data-target="p3" class="nav-btn">28-3 삽입</button>
+    <button data-target="final" class="nav-btn">종합 체크</button>
+  </nav>
+
+  <main>
+    <section id="p1" class="lesson-section">
+      <div class="section-head">
+        <div><span class="tag">28-1</span><h2>사바나 선호: 타고난 선호가 경험으로 수정된다</h2></div>
+        <span class="type-pill">주제 찾기</span>
+      </div>
+
+      <article class="card flow-card">
+        <h3>1. 내용 흐름</h3>
+        <div class="flow">
+          <div><b>① 관찰</b><span>사바나에 가본 적 없는 아이들도 사바나 풍경을 선호함</span></div>
+          <i>→</i>
+          <div><b>② 추론</b><span>이 선호는 어느 정도 타고난 것일 수 있음</span></div>
+          <i>→</i>
+          <div><b>③ 변화</b><span>나이가 들수록 자신이 살아온 환경의 경험이 선호를 수정함</span></div>
+        </div>
+        <div class="teacher-note"><b>수업 한 줄:</b> <span>innate / programmed preference → modified by experience</span></div>
+      </article>
+
+      <article class="card excerpt-card">
+        <h3>2. 핵심 문장만 확인</h3>
+        <p class="excerpt">“this preference was programmed into their brains.”</p>
+        <p class="ko">→ 이 선호가 그들의 뇌에 미리 프로그램되어 있었다.</p>
+        <p class="excerpt">“this preference gets modified by where they have lived.”</p>
+        <p class="ko">→ 이 선호는 그들이 살아온 곳에 의해 수정된다.</p>
+        <p class="source-note">※ 전체 원문은 교재에서 확인. 이 페이지는 수업용 핵심 발췌와 변형 연습만 제공합니다.</p>
+      </article>
+
+      <article class="card">
+        <h3>3. 오늘의 어법 미니레슨</h3>
+        <div class="grammar-grid">
+          <div class="grammar"><b>get + p.p.</b><span>수동 의미: gets modified = 수정된다</span></div>
+          <div class="grammar"><b>명사 + p.p.</b><span>landscapes dotted with trees → 풍경이 점점이 뒤덮임</span></div>
+          <div class="grammar"><b>관계대명사 that</b><span>scenes that resemble... → that 뒤 주어가 비어 있음</span></div>
+          <div class="grammar"><b>because of + 명사</b><span>because of more experience / because + S + V</span></div>
+          <div class="grammar"><b>resemble + 목적어</b><span>resemble the savanna (resemble to ❌)</span></div>
+          <div class="grammar"><b>현재완료 경험</b><span>have never been there = 가본 적이 없다</span></div>
+        </div>
+      </article>
+
+      <article class="card practice-card">
+        <h3>4. 직접 채워보기</h3>
+        <div class="q" data-type="text" data-answer="modified">
+          <p><b>Q1.</b> As people get older, this preference gets <span class="blank">_____</span> by where they have lived.</p>
+          <input class="answer-input" placeholder="영어로 입력">
+          <button class="check-btn">정답 확인</button>
+          <div class="feedback"></div>
+        </div>
+        <div class="q" data-type="choice" data-answer="B">
+          <p><b>Q2.</b> 다음 중 어법상 가장 적절한 것은?</p>
+          <div class="choices">
+            <button data-value="A">landscapes thinly dot with trees</button>
+            <button data-value="B">landscapes thinly dotted with trees</button>
+            <button data-value="C">landscapes thinly dotting with trees</button>
+            <button data-value="D">landscapes are thinly dot with trees</button>
+          </div>
+          <div class="feedback" data-explain="landscapes가 나무에 '뒤덮인' 대상이므로 수동관계의 과거분사 dotted가 맞습니다."></div>
+        </div>
+        <div class="q" data-type="choice" data-answer="C">
+          <p><b>Q3.</b> 다음 중 원문 의미와 어법에 맞는 것은?</p>
+          <div class="choices">
+            <button data-value="A">scenes that resemble to the savanna</button>
+            <button data-value="B">scenes which resembles the savanna</button>
+            <button data-value="C">scenes that resemble the savanna</button>
+            <button data-value="D">scenes resembling to the savanna</button>
+          </div>
+          <div class="feedback" data-explain="resemble은 타동사라 전치사 없이 목적어를 바로 취하고, 선행사 scenes가 복수이므로 resemble이 맞습니다."></div>
+        </div>
+      </article>
+
+      <article class="card checkpoint">
+        <h3>5. 내용 확인</h3>
+        <div class="q" data-type="choice" data-answer="D">
+          <p><b>핵심 주제로 가장 적절한 것은?</b></p>
+          <div class="choices">
+            <button data-value="A">사바나 환경이 인간의 생존 본능을 어떻게 강화하는가</button>
+            <button data-value="B">동아프리카 산림 생태계가 변화한 원인</button>
+            <button data-value="C">문화적 전통이 환경 선호를 결정하는 방식</button>
+            <button data-value="D">타고난 사바나 선호가 경험에 의해 수정되는 과정</button>
+          </div>
+          <div class="feedback" data-explain="앞부분의 innate/programmed preference와 뒷부분의 modified by experience를 모두 포함해야 합니다."></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="p2" class="lesson-section hidden">
+      <div class="section-head">
+        <div><span class="tag">28-2</span><h2>꿈의 기억: 왜 출처를 구분하기 어려울까?</h2></div>
+        <span class="type-pill">어법</span>
+      </div>
+
+      <article class="card flow-card">
+        <h3>1. 내용 흐름</h3>
+        <div class="flow">
+          <div><b>깨어 있는 상상</b><span>내가 이미지를 만들었다는 인지 과정의 흔적이 남음</span></div>
+          <i>↔</i>
+          <div><b>꿈</b><span>꿈이 생성되는 과정을 의식하지 못함</span></div>
+          <i>→</i>
+          <div><b>결과</b><span>기억이 꿈에서 왔는지 판단하기 더 어려워짐</span></div>
+        </div>
+        <div class="teacher-note"><b>수업 한 줄:</b> <span>generation-process cue 부족 → source monitoring 어려움</span></div>
+      </article>
+
+      <article class="card excerpt-card">
+        <h3>2. 핵심 어법 문장</h3>
+        <p class="excerpt">“Remembering that you intentionally thought of an image helps distinguish it...”</p>
+        <p class="ko">→ ‘의도적으로 이미지를 떠올렸다는 것을 기억하는 것’이 주어이므로 Remembering.</p>
+      </article>
+
+      <article class="card">
+        <h3>3. 오늘의 어법 미니레슨</h3>
+        <div class="grammar-grid">
+          <div class="grammar"><b>V-ing 주어</b><span>Remembering ... helps → 동명사 덩어리가 주어</span></div>
+          <div class="grammar"><b>find it adj to V</b><span>find it difficult to determine</span></div>
+          <div class="grammar"><b>be found to V</b><span>was found to be less accurate</span></div>
+          <div class="grammar"><b>수 일치</b><span>explanation is / operations that help</span></div>
+          <div class="grammar"><b>in that</b><span>~라는 점에서</span></div>
+          <div class="grammar"><b>, making ...</b><span>앞 내용의 결과를 덧붙이는 분사구문</span></div>
+        </div>
+      </article>
+
+      <article class="card practice-card">
+        <h3>4. 학교식 어법 변형</h3>
+        <div class="q" data-type="choice" data-answer="B">
+          <p><b>Q1.</b> (Remember / Remembering) that you intentionally thought of an image helps distinguish it from a perception.</p>
+          <div class="choices">
+            <button data-value="A">Remember</button>
+            <button data-value="B">Remembering</button>
+            <button data-value="C">Remembered</button>
+            <button data-value="D">To remembered</button>
+          </div>
+          <div class="feedback" data-explain="뒤의 helps가 본동사이므로 앞부분 전체가 주어가 되어야 합니다. V-ing인 Remembering이 가장 자연스럽습니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="C">
+          <p><b>Q2.</b> Dream source monitoring was found to be ______ than other memory source monitoring.</p>
+          <div class="choices">
+            <button data-value="A">less accurately</button>
+            <button data-value="B">least accurate</button>
+            <button data-value="C">less accurate</button>
+            <button data-value="D">more accurately</button>
+          </div>
+          <div class="feedback" data-explain="be 뒤에는 보어인 형용사 accurate가 오고, 비교 구조 less + 형용사 + than이 필요합니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="A">
+          <p><b>Q3.</b> Marcia K. Johnson and her colleagues’ explanation ______ that real dreams are deficient in information about cognitive operations.</p>
+          <div class="choices">
+            <button data-value="A">is</button>
+            <button data-value="B">are</button>
+            <button data-value="C">have</button>
+            <button data-value="D">being</button>
+          </div>
+          <div class="feedback" data-explain="주어의 핵심 명사는 단수 explanation입니다. Johnson and her colleagues는 소유격 내부 요소라 동사의 수를 결정하지 않습니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="D">
+          <p><b>Q4.</b> Dream generation is “transparent” in that we don’t experience the generation process, ______ it more difficult to source monitor.</p>
+          <div class="choices">
+            <button data-value="A">makes</button>
+            <button data-value="B">made</button>
+            <button data-value="C">to make</button>
+            <button data-value="D">making</button>
+          </div>
+          <div class="feedback" data-explain="앞의 완전한 절 뒤에 결과를 덧붙이는 분사구문이므로 making이 맞습니다."></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="p3" class="lesson-section hidden">
+      <div class="section-head">
+        <div><span class="tag">28-3</span><h2>실패는 축소, 성공은 확대: 자아상을 지키는 방식</h2></div>
+        <span class="type-pill">문장 삽입</span>
+      </div>
+
+      <article class="card flow-card">
+        <h3>1. 내용 흐름</h3>
+        <div class="flow">
+          <div><b>실패</b><span>중요성을 낮춤: “그 시험이 뭐 그렇게 중요해?”</span></div>
+          <i>↔</i>
+          <div><b>성공</b><span>중요성을 높임: “이건 내 미래에 정말 중요해!”</span></div>
+          <i>→</i>
+          <div><b>목적</b><span>‘I am good’이라는 자기 이야기를 유지</span></div>
+        </div>
+      </article>
+
+      <article class="card excerpt-card">
+        <h3>2. 문장 삽입 단서</h3>
+        <p class="excerpt">“In contrast ... the precise opposite pattern for their successes...”</p>
+        <p class="ko">→ In contrast + successes + opposite pattern을 보면, 앞에는 ‘실패 축소’, 뒤에는 ‘성공 확대’가 와야 합니다.</p>
+      </article>
+
+      <article class="card">
+        <h3>3. 오늘의 어법 미니레슨</h3>
+        <div class="grammar-grid">
+          <div class="grammar"><b>much research + 단수동사</b><span>research는 불가산명사 → has documented</span></div>
+          <div class="grammar"><b>prevent A from V-ing</b><span>prevent them from overwriting</span></div>
+          <div class="grammar"><b>간접의문문</b><span>how crucial calculus is (의문문 어순 X)</span></div>
+          <div class="grammar"><b>key to V-ing</b><span>to는 전치사 → key to getting</span></div>
+          <div class="grammar"><b>By + V-ing</b><span>By titrating ... = ~함으로써</span></div>
+          <div class="grammar"><b>enable A to V</b><span>enables them to tell</span></div>
+        </div>
+      </article>
+
+      <article class="card practice-card">
+        <h3>4. 직접 적용</h3>
+        <div class="q" data-type="choice" data-answer="A">
+          <p><b>Q1.</b> Much research in social psychology ______ documented key strategies people use to defend a positive self-view.</p>
+          <div class="choices">
+            <button data-value="A">has</button>
+            <button data-value="B">have</button>
+            <button data-value="C">are</button>
+            <button data-value="D">were</button>
+          </div>
+          <div class="feedback" data-explain="research는 불가산명사로 단수 취급하므로 has가 맞습니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="D">
+          <p><b>Q2.</b> This trivialization prevents them ______ their life stories.</p>
+          <div class="choices">
+            <button data-value="A">to overwrite</button>
+            <button data-value="B">overwrite</button>
+            <button data-value="C">from overwrite</button>
+            <button data-value="D">from overwriting</button>
+          </div>
+          <div class="feedback" data-explain="prevent A from V-ing가 고정 구조입니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="B">
+          <p><b>Q3.</b> 올바른 간접의문문은?</p>
+          <div class="choices">
+            <button data-value="A">how crucial is calculus</button>
+            <button data-value="B">how crucial calculus is</button>
+            <button data-value="C">how is calculus crucial</button>
+            <button data-value="D">how calculus crucial is</button>
+          </div>
+          <div class="feedback" data-explain="간접의문문은 의문사 + 주어 + 동사 어순을 사용합니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="C">
+          <p><b>Q4.</b> it’s key to ______ into graduate school</p>
+          <div class="choices">
+            <button data-value="A">get</button>
+            <button data-value="B">got</button>
+            <button data-value="C">getting</button>
+            <button data-value="D">gets</button>
+          </div>
+          <div class="feedback" data-explain="key to에서 to는 전치사이므로 뒤에 동명사 getting이 옵니다."></div>
+        </div>
+      </article>
+
+      <article class="card checkpoint">
+        <h3>5. 문장 삽입 사고 과정</h3>
+        <div class="q" data-type="choice" data-answer="C">
+          <p><b>삽입 문장에 In contrast / successes / opposite pattern이 있다면 가장 먼저 확인할 것은?</b></p>
+          <div class="choices">
+            <button data-value="A">앞뒤 문장의 시제가 같은가</button>
+            <button data-value="B">앞뒤에 같은 고유명사가 있는가</button>
+            <button data-value="C">앞에는 실패 패턴, 뒤에는 성공 패턴이 이어지는가</button>
+            <button data-value="D">앞 문장에 반드시 because가 있는가</button>
+          </div>
+          <div class="feedback" data-explain="문장 삽입은 연결어와 반복어가 핵심입니다. In contrast는 앞뒤의 대조 관계를 요구합니다."></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="final" class="lesson-section hidden">
+      <div class="section-head">
+        <div><span class="tag">FINAL</span><h2>28강 종합 체크</h2></div>
+        <span class="type-pill">변형 문제</span>
+      </div>
+
+      <article class="card">
+        <h3>세 지문을 섞어서 풀어보기</h3>
+        <p class="muted">정답 확인을 누른 문제는 자동으로 진행률에 반영됩니다.</p>
+
+        <div class="q" data-type="choice" data-answer="B">
+          <p><b>1.</b> The landscapes were thinly ______ with trees.</p>
+          <div class="choices"><button data-value="A">dotting</button><button data-value="B">dotted</button><button data-value="C">dot</button><button data-value="D">to dot</button></div>
+          <div class="feedback" data-explain="풍경이 나무에 점점이 '뒤덮인' 수동관계이므로 dotted."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="A">
+          <p><b>2.</b> 다음 중 어법상 옳은 문장은?</p>
+          <div class="choices">
+            <button data-value="A">Remembering the generation process helps distinguish imagination from perception.</button>
+            <button data-value="B">Remember the generation process helps distinguish imagination from perception.</button>
+            <button data-value="C">Remembering the generation process help distinguish imagination from perception.</button>
+            <button data-value="D">Remembered the generation process helping distinguish imagination from perception.</button>
+          </div>
+          <div class="feedback" data-explain="동명사구 Remembering...이 단수 주어이고 본동사는 helps입니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="D">
+          <p><b>3.</b> 다음 중 전치사 to 뒤 동명사가 필요한 표현은?</p>
+          <div class="choices"><button data-value="A">want to</button><button data-value="B">decide to</button><button data-value="C">plan to</button><button data-value="D">be key to</button></div>
+          <div class="feedback" data-explain="be key to의 to는 전치사이므로 뒤에 명사/동명사가 옵니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="C">
+          <p><b>4.</b> 28-1의 핵심 논리를 가장 잘 나타낸 것은?</p>
+          <div class="choices">
+            <button data-value="A">experience → no preference</button>
+            <button data-value="B">culture → fixed preference</button>
+            <button data-value="C">innate preference → modified by experience</button>
+            <button data-value="D">savanna → survival instinct only</button>
+          </div>
+          <div class="feedback" data-explain="어린 시절의 타고난 선호가 성장 후 경험에 의해 수정되는 것이 핵심입니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="B">
+          <p><b>5.</b> 28-2에서 꿈의 source monitoring이 어려운 핵심 이유는?</p>
+          <div class="choices">
+            <button data-value="A">꿈의 이미지가 항상 흐리기 때문에</button>
+            <button data-value="B">꿈이 생성되는 인지 과정을 의식적으로 경험하지 못하기 때문에</button>
+            <button data-value="C">현실 기억은 모두 정확하기 때문에</button>
+            <button data-value="D">꿈에서는 감정이 전혀 없기 때문에</button>
+          </div>
+          <div class="feedback" data-explain="꿈의 생성 과정에 대한 인지적 단서가 부족하다는 것이 지문의 설명입니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="A">
+          <p><b>6.</b> 28-3의 자기방어 패턴으로 맞는 것은?</p>
+          <div class="choices">
+            <button data-value="A">실패의 중요성은 낮추고 성공의 중요성은 높인다</button>
+            <button data-value="B">실패와 성공을 모두 중요하지 않게 본다</button>
+            <button data-value="C">실패만 자신의 정체성과 연결한다</button>
+            <button data-value="D">성공을 우연으로만 설명한다</button>
+          </div>
+          <div class="feedback" data-explain="실패를 trivialize하고 성공에는 outsize importance를 부여하는 대조가 핵심입니다."></div>
+        </div>
+
+        <div class="q" data-type="choice" data-answer="D">
+          <p><b>7.</b> 다음 중 어법상 옳은 것은?</p>
+          <div class="choices">
+            <button data-value="A">prevent them to rewrite</button>
+            <button data-value="B">prevent them from rewrite</button>
+            <button data-value="C">prevent to them rewriting</button>
+            <button data-value="D">prevent them from rewriting</button>
+          </div>
+          <div class="feedback" data-explain="prevent A from V-ing 구조를 확인합니다."></div>
+        </div>
+
+        <div class="q" data-type="text" data-answer="how crucial calculus is">
+          <p><b>8.</b> 간접의문문 어순으로 완성: <span class="blank">________________________</span></p>
+          <p class="muted">힌트: how / crucial / calculus / is</p>
+          <input class="answer-input" placeholder="영어로 입력">
+          <button class="check-btn">정답 확인</button>
+          <div class="feedback"></div>
+        </div>
+
+        <div class="result-box">
+          <b>종합 체크 점수</b>
+          <span id="finalScore">아직 채점 전</span>
+          <button id="resetBtn" class="ghost-btn">전체 답안 초기화</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <b>수업 운영 추천</b> · 원문 읽기는 교재에서, 설명·입력·변형은 이 웹 워크북에서 진행하세요. 학생 답안은 이 브라우저에 자동 저장됩니다.
+  </footer>
+</div>
+<script src="app.js?v=1"></script>
+</body>
+</html>
