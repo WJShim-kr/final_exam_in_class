@@ -4,7 +4,7 @@ const KEY="finalExamClass"+(document.body.dataset.storageKey||CHAPTER);
 let saved=JSON.parse(localStorage.getItem(KEY)||"{}");
 function norm(s){return (s||"").toLowerCase().trim().replace(/[’‘]/g,"'").replace(/[.,!?;:“”"]/g,"").replace(/\s+/g," ")}
 function save(){localStorage.setItem(KEY,JSON.stringify(saved));updateProgress();updateFinalScore();}
-function qid(q){return q.dataset.id||("q"+$(".q").indexOf(q))}
+function qid(q){return q.dataset.id||("q"+$$(".q").indexOf(q))}
 function markDone(q,ok,value){saved[qid(q)]={done:true,ok,value};save();}
 function restore(){
   $$(".q").forEach(q=>{
@@ -59,7 +59,7 @@ $$(".q[data-type=choice] .choices button").forEach(btn=>btn.onclick=()=>{
   q.querySelectorAll(".choices button").forEach(x=>x.classList.remove("selected"));btn.classList.add("selected");
   const ok=btn.dataset.value===q.dataset.answer;showChoiceFeedback(q,btn,ok);markDone(q,ok,btn.dataset.value);
 });
-$(".q[data-type=parts] .check-btn").forEach(btn=>btn.onclick=()=>{
+$$(".q[data-type=parts] .check-btn").forEach(btn=>btn.onclick=()=>{
   const q=btn.closest(".q"); if(saved[qid(q)]?.done)return;
   const inputs=[...q.querySelectorAll(".part-input")];
   if(inputs.some(i=>!i.value.trim()))return;
@@ -67,11 +67,11 @@ $(".q[data-type=parts] .check-btn").forEach(btn=>btn.onclick=()=>{
   const vals=inputs.map(i=>i.value);
   showPartsFeedback(q,ok);markDone(q,ok,vals);
 });
-$(".q[data-type=text] .check-btn").forEach(btn=>btn.onclick=()=>{
+$$(".q[data-type=text] .check-btn").forEach(btn=>btn.onclick=()=>{
   const q=btn.closest(".q"),input=q.querySelector(".answer-input"),v=input.value;if(!v.trim())return;
   const ok=norm(v)===norm(q.dataset.answer);showTextFeedback(q,ok);markDone(q,ok,v);
 });
-$(".answer-input,.part-input").forEach(input=>input.addEventListener("keydown",e=>{if(e.key==="Enter")input.closest(".q").querySelector(".check-btn").click()}));
+$$(".answer-input,.part-input").forEach(input=>input.addEventListener("keydown",e=>{if(e.key==="Enter")input.closest(".q").querySelector(".check-btn").click()}));
 function updateProgress(){
   const total=$$(".q").length,done=Object.values(saved).filter(x=>x.done).length,p=Math.round(done/total*100);
   $("#progressText").textContent=p+"%";$("#progressBar").style.width=p+"%";
