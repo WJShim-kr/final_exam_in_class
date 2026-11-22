@@ -1,5 +1,6 @@
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const CHAPTER=document.body.dataset.chapter||"28";
+const RESET_LABEL=document.body.dataset.resetLabel||(CHAPTER+"강");
 const KEY="finalExamClass"+(document.body.dataset.storageKey||CHAPTER);
 let saved=JSON.parse(localStorage.getItem(KEY)||"{}");
 function norm(s){return (s||"").toLowerCase().trim().replace(/[’‘]/g,"'").replace(/[.,!?;:“”"]/g,"").replace(/\s+/g," ")}
@@ -80,5 +81,5 @@ function updateFinalScore(){
   const qs=$$("#final .q"),done=qs.filter(q=>saved[qid(q)]?.done),score=done.filter(q=>saved[qid(q)]?.ok).length;
   $("#finalScore").textContent=done.length?score+" / "+qs.length+(done.length<qs.length?" (진행 중)":""):"아직 채점 전";
 }
-$("#resetBtn").onclick=()=>{if(confirm("이 브라우저에 저장된 "+CHAPTER+"강 답안을 모두 초기화할까요?")){localStorage.removeItem(KEY);location.reload()}};
+$("#resetBtn").onclick=()=>{if(confirm("이 브라우저에 저장된 "+RESET_LABEL+" 답안을 모두 초기화할까요?")){localStorage.removeItem(KEY);location.reload()}};
 restore();updateProgress();updateFinalScore();
