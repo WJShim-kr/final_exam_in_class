@@ -17,3 +17,60 @@ button,input{font:inherit}.shell{max-width:980px;margin:auto;padding:22px 14px 8
 .word-bank{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}.word-bank span{background:var(--accent2);color:#4f398e;border-radius:999px;padding:5px 9px;font-size:12px}
 .exam-card{border-left:4px solid var(--accent)}.exam-label{display:inline-block;background:#2f2940;color:#fff;border-radius:999px;padding:4px 8px;font-size:10px;font-weight:800;margin-bottom:7px}.exam-note{font-size:12px;color:var(--muted);margin:-5px 0 12px}
 @media(max-width:700px){.parts-grid{grid-template-columns:1fr}}
+
+
+/* Layout hardening for dense workbook cards */
+.card > .section-head{margin:0 0 16px;align-items:flex-start}
+.card > .exam-label + .section-head{margin-top:4px}
+.section-head > div{min-width:0}
+.section-head h2,.section-head h3{line-height:1.35;overflow-wrap:anywhere;word-break:keep-all}
+.type-pill{flex:0 0 auto;white-space:nowrap}
+
+.flow>*{min-width:0}
+.flow div{height:auto;overflow:visible}
+.flow span,.teacher-note,.q p,.feedback,.grammar b,.grammar span,.choices button{
+  overflow-wrap:anywhere;
+  word-break:keep-all;
+}
+.teacher-note{line-height:1.65}
+
+.grammar-grid{margin:14px 0 0;align-items:stretch}
+.grammar{min-width:0;height:auto;line-height:1.45}
+.grammar b{line-height:1.45}
+.grammar span{display:block;line-height:1.6}
+
+.exam-note{
+  font-size:13px;
+  color:var(--muted);
+  margin:16px 0 14px;
+  padding:14px 15px;
+  background:#faf9fe;
+  border:1px solid var(--line);
+  border-radius:13px;
+  line-height:1.65;
+}
+.exam-note b{display:block;color:#4d3b83;margin-bottom:7px}
+.exam-note .excerpt{
+  font-size:16px;
+  line-height:1.75;
+  margin:8px 0 0;
+  overflow-wrap:anywhere;
+  word-break:normal;
+}
+
+.q{clear:both;min-width:0}
+.q + .q{margin-top:2px}
+.choices>*{min-width:0}
+.choices button{white-space:normal;line-height:1.55;min-height:48px}
+.answer-input,.part-input{min-width:0}
+
+@media(max-width:700px){
+  .card{padding:16px}
+  .card > .section-head{gap:8px;align-items:flex-start}
+  .section-head{flex-wrap:wrap}
+  .type-pill{margin-top:2px}
+  .grammar-grid{gap:10px}
+  .exam-note{margin-top:14px;padding:13px}
+  .exam-note .excerpt{font-size:15px;line-height:1.72}
+  .choices button{min-height:0}
+}
